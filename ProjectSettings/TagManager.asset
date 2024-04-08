@@ -8,6 +8,14 @@ TagManager:
   - Hand
   - Coke
   - Customer_2
+  - LemonTea
+  - Delivery
+  - Tool
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
   layers:
   - Default
   - TransparentFX

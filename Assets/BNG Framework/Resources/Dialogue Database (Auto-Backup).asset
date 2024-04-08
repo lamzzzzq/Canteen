@@ -334,6 +334,96 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+  - id: 6
+    fields:
+    - title: Name
+      value: FenQuest
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+  - id: 7
+    fields:
+    - title: Name
+      value: Boss_Third
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+  - id: 8
+    fields:
+    - title: Name
+      value: FenQuest_2
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
   locations: []
   variables:
   - id: 1
@@ -1213,6 +1303,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: a16683f1-ff0f-4407-9a82-a6ebb74e7fd9
+        type: 0
+        typeString: 
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -1228,8 +1322,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 422.46567
-        y: 404.22842
+        x: 420.19296
+        y: 405.7436
         width: 160
         height: 30
     entryGroups: []
@@ -1656,15 +1750,15 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("FenQuest") == "unassigned"
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 104.66667
-        y: 216.66667
+        x: 107.51397
+        y: 217.54384
         width: 160
         height: 30
     - id: 2
@@ -1866,6 +1960,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: e73c1960-0f44-4fc9-a952-519deaed0579
+        type: 0
+        typeString: 
       conversationID: 3
       isRoot: 0
       isGroup: 0
@@ -1875,13 +1973,13 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: SetQuestState("FenQuest", "active")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 106
+        x: 111.26315
         y: 410.66666
         width: 160
         height: 30
@@ -1930,15 +2028,15 @@ MonoBehaviour:
         destinationDialogueID: 7
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("FenQuest") == "grantable"
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 519.33344
-        y: 204.00002
+        x: 520.21063
+        y: 204.87721
         width: 160
         height: 30
     - id: 7
@@ -2085,7 +2183,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: CurrentQuestState("FenQuest") == "returnToNPC"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -2097,8 +2195,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 210.93965, y: 35.449398}
-    canvasZoom: 0.6100004
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.76000035
   - id: 4
     fields:
     - title: Title
@@ -2401,7 +2499,7 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("Customer_2") == "unassigned"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -2606,7 +2704,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(Order5_Desk,true);
+
+          SetActive(Order5_Counter,true);
+
+          SetActive(Customer_Ham,true);'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -2769,6 +2871,10 @@ MonoBehaviour:
         value: AudioWait(036)
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 229931f8-99e7-4ed4-b41b-4b814d737530
+        type: 0
+        typeString: 
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -2935,9 +3041,15 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(Order3,false);
+
+          SetActive(Order3_ToShow,true);'
         type: 0
         typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -2952,15 +3064,16 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: CurrentQuestState("Boss_Second") == "success"
+      conditionsString: CurrentQuestState("Boss_Second") == "success" and (CurrentQuestState("Boss_Third")
+        ~= "active")
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 437.6078
-        y: 110.35292
+        x: 441.52936
+        y: 111.13725
         width: 160
         height: 30
     - id: 5
@@ -2994,6 +3107,10 @@ MonoBehaviour:
         value: AudioWait(040)
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: eab1c633-3ac2-4bad-91d4-7599fef83a5f
+        type: 0
+        typeString: 
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -3015,7 +3132,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 445.6078
+        x: 446.3921
         y: 159.80392
         width: 160
         height: 30
@@ -3105,9 +3222,19 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(Order3_Obj,true);
+
+          SetActive(Order3_Desk,false);'
         type: 0
         typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: c5d29c7e-92e1-402e-8ea0-45202fdf2c4d
+        type: 0
+        typeString: 
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -3123,8 +3250,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 171.33334
-        y: 288.66672
+        x: 172.11765
+        y: 291.01965
         width: 160
         height: 30
     - id: 9
@@ -3214,6 +3341,10 @@ MonoBehaviour:
         value: AudioWait(044)
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 81f67de2-262a-4b55-ae9b-fcf7da698950
+        type: 0
+        typeString: 
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -3229,8 +3360,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 448.7451
-        y: 339.60782
+        x: 447.9608
+        y: 340.39212
         width: 160
         height: 30
     entryGroups: []
@@ -3371,9 +3502,19 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(054)
+        value: 'SetActive(LunchDelivery,true);
+
+          AudioWait(054);
+
+          SetActive(Mark_1,true);
+
+          SetActive(Order5_Counter,false)'
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: ca5aa2eb-17b2-49b7-9567-1e4495cc6b42
+        type: 0
+        typeString: 
       conversationID: 7
       isRoot: 0
       isGroup: 0
@@ -3388,14 +3529,14 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("Boss_Third") == "active"
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 159.33333
+        x: 163.44243
         y: 80
         width: 160
         height: 30
@@ -3539,6 +3680,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 8a64f684-f68f-46f8-a99c-de5e5fc39094
+        type: 0
+        typeString: 
       conversationID: 7
       isRoot: 0
       isGroup: 0
@@ -3602,7 +3747,7 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("Boss_Third") == "grantable"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -3643,6 +3788,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: b1a54884-8ad7-48b8-9067-91d026c4c771
+        type: 0
+        typeString: 
       conversationID: 7
       isRoot: 0
       isGroup: 0
@@ -3696,7 +3845,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(woman-chef_1,false);
+
+          SetActive(woman-chef_2,true)'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -3812,6 +3963,10 @@ MonoBehaviour:
         value: AudioWait(067)
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: a54b50e8-bf54-4557-ac1f-ab84bda8ab0e
+        type: 0
+        typeString: 
       conversationID: 7
       isRoot: 0
       isGroup: 0
@@ -3832,8 +3987,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 21.339567, y: 10.996927}
+    canvasZoom: 1.1199999
   - id: 8
     fields:
     - title: Title
@@ -4142,7 +4297,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: CurrentQuestState("Counter_Customer") == "success"
       userScript: 
       onExecute:
         m_PersistentCalls:

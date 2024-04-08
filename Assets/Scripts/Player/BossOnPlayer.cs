@@ -11,6 +11,8 @@ public class BossOnPlayer : MonoBehaviour
     public Transform bossTalkPosition;
     public GameObject boss;
 
+    public CharacterController playerController;
+
     public void talkToBoss()
     {
         teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
@@ -35,5 +37,32 @@ public class BossOnPlayer : MonoBehaviour
         {
             item.OnUse();
         }
+    }
+
+    public void enableController()
+    {
+        playerController.enabled = true;
+    }
+
+    public void disableController()
+    {
+        playerController.enabled = false;
+    }
+
+    public void talkToBossThird()
+    {
+
+        teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
+
+        StartCoroutine(endConversationAndTeleport());
+    }
+
+    public void talkToBossFourth()
+    {
+        QuestLog.SetQuestState("Boss_Third", QuestState.Grantable);
+
+        teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
+
+        StartCoroutine(endConversationAndTeleport());
     }
 }
