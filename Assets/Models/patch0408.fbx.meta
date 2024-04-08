@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: 3806782591e14432ca8a3408e59987a2
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bacon.002
+    second: {fileID: 2100000, guid: 8ee32a3d90fda49f2aa0f15d45226065, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bread.002
+    second: {fileID: 2100000, guid: a404afe466b3f44bd9887efeb090cb06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CurryAndRice
+    second: {fileID: 2100000, guid: c70d911de2f0641ebb73131f8d5f744b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FriedEgg
+    second: {fileID: 2100000, guid: a5736f024e69b46bd8103c4f07b466e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green4
+    second: {fileID: 2100000, guid: ec97fc0a2db4a41b191e5520d53d45bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: 752eb648d39f744df9712a728f745c31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.015
+    second: {fileID: 2100000, guid: 7994d66b2bde549c59ff78abb2b3d687, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.018
+    second: {fileID: 2100000, guid: eb43d4bab1eff4282b5d2dcaf0b66cf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.022
+    second: {fileID: 2100000, guid: 0ea24d253012c49319d3a16700941482, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: b03ad9b5a70d44fb2a9579e6f75faa8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal.001
+    second: {fileID: 2100000, guid: 5bce2d33269d94e698d903426c64017b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ramen
+    second: {fileID: 2100000, guid: 41448ee09c6a646b4bcf6c7c8af65525, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sandwich
+    second: {fileID: 2100000, guid: a1796c7b9f53c4a708e04fe127122737, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sausage
+    second: {fileID: 2100000, guid: ea7f1aa6afb7a4973b6ddec6d1e6bae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spaghetti
+    second: {fileID: 2100000, guid: f0fcdd86391294bc1a492b678f2f4aa2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TomatoSoup
+    second: {fileID: 2100000, guid: 05ec3cebe5c874c3aabca63496548278, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 3e9f52e3a60be4f1caaa5902ff19ff27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 62cea7cd5b6424ffb98d7510db5f3509, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: groceryProps
+    second: {fileID: 2100000, guid: 600c26dcaf31743a2be0257b5c78b47c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: labels
+    second: {fileID: 2100000, guid: f7d0188a32d6142cdadda307e23e4d38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4SG
+    second: {fileID: 2100000, guid: df0765204c37f4213a995bf07128d172, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: thisthis
+    second: {fileID: 2100000, guid: d39f1916e3118446fb8e98ceb82ee3fa, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bacon_Albedo
+    second: {fileID: 2800000, guid: 1f5f6b78e7e4f9149b7eec084eb1b9e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bacon_Normal
+    second: {fileID: 2800000, guid: cf95eb9eeefc91643adf5f507f3b529b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bread_Albedo
+    second: {fileID: 2800000, guid: d6073e06d434998499d0909fe94bf231, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bread_Normal
+    second: {fileID: 2800000, guid: 5af37aab49ffb2548ae0965e2fe8162a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CurryAndRice_Albedo
+    second: {fileID: 2800000, guid: 7d60b5f086575a049b303c792ffcb828, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CurryAndRice_Normal
+    second: {fileID: 2800000, guid: b840751d917648647b889b06464a5ae6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CurryAndRice_SpecularSmoothness
+    second: {fileID: 2800000, guid: 4b9b43564a7adee4d8672bfe7f0e66fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_normal
+    second: {fileID: 2800000, guid: d05b86ca8c86c9943b6cafa2724793b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FriedEgg_Albedo
+    second: {fileID: 2800000, guid: 7c5b7dbdad4230f499fc2c365cb2c2b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FriedEgg_Normal
+    second: {fileID: 2800000, guid: 467302ccbe3f6dc45b9629f28ab03ed9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.015_baseColor
+    second: {fileID: 2800000, guid: c3b079eb39a30eb489a2bca59aa9420d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ramen_Albedo
+    second: {fileID: 2800000, guid: d67993ef76d006f4bb4eed7e9b91bf54, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ramen_Normal
+    second: {fileID: 2800000, guid: a308516629281d3449223f231bf87453, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ramen_SpecularSmoothness
+    second: {fileID: 2800000, guid: 956c8981629ee9a469cf24bfe664a80a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sandwich_Albedo
+    second: {fileID: 2800000, guid: f88df2584e151264ca99166a440dafa7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sausage_Albedo
+    second: {fileID: 2800000, guid: 6168c44f4b283a44fbf1a714590c4b6a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sausage_Normal
+    second: {fileID: 2800000, guid: a871e1a3af906a940aa2d1ca204cf0f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Spaghetti_Albedo
+    second: {fileID: 2800000, guid: 51b04a91990c932429f443ddfe6bbb7c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Spaghetti_Normal
+    second: {fileID: 2800000, guid: 5c919eccdf963ff48960a08dc243b117, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Spaghetti_SpecularSmoothness
+    second: {fileID: 2800000, guid: bcdbd8829333a054c90b72c270a1b1f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TomatoSoup_Albedo
+    second: {fileID: 2800000, guid: 1a21c1a9a30652e42acd81eaef7a6050, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TomatoSoup_Normal
+    second: {fileID: 2800000, guid: 99a1d64907352c4438c42e4fe24e8768, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TomatoSoup_SpecularSmoothness
+    second: {fileID: 2800000, guid: 1a52728c1b599154d8b7db4f65854508, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: food labels
+    second: {fileID: 2800000, guid: 42c0133979e7ea14ea1068bafb6845cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: groceryProps
+    second: {fileID: 2800000, guid: 5bffff8c7f4ed9640a958fec2f369f3b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lambert4SG_baseColor
+    second: {fileID: 2800000, guid: 68ef6bcd9eafce7448681b6c12f733fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: thisthis
+    second: {fileID: 2800000, guid: 11127ade533212343b9ff49b564a9678, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
