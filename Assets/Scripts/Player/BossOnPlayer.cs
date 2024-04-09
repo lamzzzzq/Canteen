@@ -14,6 +14,10 @@ public class BossOnPlayer : MonoBehaviour
     public CharacterController playerController;
 
     public GameObject characterTart;
+
+    public GameObject[] toHide;
+    public GameObject[] toShow;
+
     public void talkToBoss()
     {
         teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
@@ -113,6 +117,28 @@ public class BossOnPlayer : MonoBehaviour
         teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
 
         StartCoroutine(endConversationAndTeleport());
+    }
+
+    public void talkToBossSeven()
+    {
+        // ’π§£°
+
+        QuestLog.SetQuestState("Boss_Fifth", QuestState.Grantable);
+
+        teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
+
+        StartCoroutine(endConversationAndTeleport());
+
+        foreach (GameObject obj in toHide)
+        {
+            obj.SetActive(false);
+        }
+
+        foreach (GameObject obj in toShow)
+        {
+            obj.SetActive(true);
+        }
+
     }
 
 }
