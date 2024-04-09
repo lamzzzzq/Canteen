@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/BNG Framework/Scenes/XR Demo.unity
     guid: a1360534006d3f845bc79b46b93cfec5
   - enabled: 0
@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Quest Demo.unity
     guid: eac0312c32df12949a47d07747a9d1cd
+  - enabled: 1
+    path: Assets/Scenes/Mall.unity
+    guid: f7e26323c850b2345a75c59a1ef85128
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a9df7e0eabf14fc41b18d173ab9b6eee,
       type: 2}
@@ -35,5 +38,5 @@ EditorBuildSettings:
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9ce5dd90b3b3c1140b2c7c28195ab800,
       type: 2}
-    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 2ae0a4a226e8d9e4aba56d1e2eb3977b,
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 4a6f0a0b83cb17a4fab58537af38db30,
       type: 2}
