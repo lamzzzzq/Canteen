@@ -13,6 +13,7 @@ public class BossOnPlayer : MonoBehaviour
 
     public CharacterController playerController;
 
+    public GameObject characterTart;
     public void talkToBoss()
     {
         teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
@@ -68,10 +69,50 @@ public class BossOnPlayer : MonoBehaviour
 
     public void talkToBossFifth()
     {
+        disableController();
+
+        //退出点餐，去和boss聊天
         QuestLog.SetQuestState("Boss_Third", QuestState.Success);
 
         teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
 
         StartCoroutine(endConversationAndTeleport());
     }
+
+    public void TartNPCShow()
+    {
+        characterTart.SetActive(true);
+
+        StartCoroutine(npcDelayShow());
+    }
+
+    public void talkAfterTart()
+    {
+        QuestLog.SetQuestState("Boss_Fifth", QuestState.Active);
+
+
+    }
+
+    private IEnumerator npcDelayShow()
+    {
+        yield return new WaitForSeconds(0.5f);
+        //talk
+        foreach (var item in characterTart.GetComponents<DialogueSystemTrigger>())
+        {
+            item.OnUse();
+        }
+    }
+
+    public void talkToBossSix()
+    {
+        disableController();
+
+        //给了蛋挞之后
+        QuestLog.SetQuestState("Boss_Fifth", QuestState.Active);
+
+        teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
+
+        StartCoroutine(endConversationAndTeleport());
+    }
+
 }
