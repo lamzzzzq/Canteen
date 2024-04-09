@@ -8,6 +8,8 @@ public class ColaCode : MonoBehaviour
 
     public BossOnPlayer boss;
 
+    public GameObject parent;
+
     private int cleanedDirtCount = 0; // 记录清理的 dirt 数量
 
     void OnTriggerEnter(Collider other)
@@ -21,16 +23,10 @@ public class ColaCode : MonoBehaviour
     void CleanDirt()
     {
         // 当抹布清理了一个 dirt 时，使该 dirt 消失
-        gameObject.SetActive(false); // 或者 Destroy(gameObject) 来销毁该 dirt 对象
+        parent.SetActive(false); // 或者 Destroy(gameObject) 来销毁该 dirt 对象
 
         // 增加清理的 dirt 数量
-        cleanedDirtCount++;
-
-        // 当清理的 dirt 数量达到 3 时，执行 function
-        if (cleanedDirtCount == 3)
-        {
-            ExecuteFunction();
-        }
+        ExecuteFunction();
     }
 
     void ExecuteFunction()
