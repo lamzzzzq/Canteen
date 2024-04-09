@@ -67,3 +67,16 @@ The following packages were added:
   com.unity.ext.nunit@1.0.6
   com.unity.inputsystem@1.7.0
   com.unity.toolchain.win-x86_64-linux-x86_64@2.0.4
+
+=== Mon Apr  8 19:45:54 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.tilemap@1.0.0
+  com.unity.ads@4.4.2
+  com.unity.analytics@3.8.1
+  com.unity.purchasing@4.9.3
+  com.unity.xr.legacyinputhelpers@2.1.10
