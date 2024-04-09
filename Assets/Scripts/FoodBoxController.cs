@@ -4,10 +4,13 @@ public class FoodBoxController : MonoBehaviour
 {
     public GameObject[] dishes; // 存储不同菜品的数组，根据标签激活相应的菜品
 
-    void OnTriggerEnter(Collider other)
+    // 记录当前激活的菜品索引
+    private int activeDishIndex = -1;
+
+    public void HandleToolEntry(GameObject tool)
     {
         // 检测到工具的标签是12345时，根据标签激活相应的菜品
-        string toolTag = other.gameObject.tag;
+        string toolTag = tool.tag;
 
         // 检查工具标签并激活相应的菜品
         switch (toolTag)
@@ -31,30 +34,30 @@ public class FoodBoxController : MonoBehaviour
                 Debug.Log("Unknown tool tag.");
                 break;
         }
-
-        // 将工具的标签重置为默认标签
-        other.gameObject.tag = "Tool";
     }
 
     void EnableDish(int dishIndex)
     {
-        // 检查当前激活的菜品
-        foreach (GameObject dish in dishes)
+        // 如果要激活的菜品与当前激活的菜品相同，则直接返回，无需再次激活
+        if (activeDishIndex == dishIndex)
         {
-            // 如果菜品已经激活，则不要再次禁用它
-            if (dish.activeSelf)
+            return;
+        }
+
+        // 遍历所有菜品
+        for (int i = 0; i < dishes.Length; i++)
+        {
+            // 如果菜品索引不等于要激活的菜品索引，则禁用该菜品
+            if (i != dishIndex)
             {
-                return;
+                dishes[i].SetActive(false);
             }
         }
 
-        // 禁用所有菜品
-        foreach (GameObject dish in dishes)
-        {
-            dish.SetActive(false);
-        }
-
-        // 激活对应的菜品
+        // 激活指定的菜品
         dishes[dishIndex].SetActive(true);
+
+        // 更新当前激活的菜品索引
+        activeDishIndex = dishIndex;
     }
 }

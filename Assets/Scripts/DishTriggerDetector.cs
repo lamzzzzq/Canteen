@@ -1,5 +1,4 @@
 using UnityEngine;
-using PixelCrushers;
 using PixelCrushers.DialogueSystem;
 
 public class DishTriggerDetector : MonoBehaviour
@@ -29,7 +28,9 @@ public class DishTriggerDetector : MonoBehaviour
                 other.gameObject.tag = "5";
                 QuestLog.SetQuestState("FenQuest", QuestState.ReturnToNPC);
             }
-            // 同样的逻辑继续适用于其他炉子或者饭盒
+
+            // 当勺子进入饭盒后，让饭盒来处理后续逻辑
+            gameObject.GetComponentInParent<FoodBoxController>().HandleToolEntry(other.gameObject);
         }
     }
 }

@@ -49,4 +49,6 @@ public class Character_2 : MonoBehaviour
     {
         target = targetPosition;
     }
+
+
 }

@@ -65,4 +65,13 @@ public class BossOnPlayer : MonoBehaviour
 
         StartCoroutine(endConversationAndTeleport());
     }
+
+    public void talkToBossFifth()
+    {
+        QuestLog.SetQuestState("Boss_Third", QuestState.Success);
+
+        teleport.ResetPlayerPosRotWithParameters(bossTalkPosition, screenFader);
+
+        StartCoroutine(endConversationAndTeleport());
+    }
 }
