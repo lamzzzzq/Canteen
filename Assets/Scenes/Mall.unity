@@ -10735,7 +10735,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eaca431b651fbb14691ec2f05da6858f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.049
+  m_Volume: 0.361
   m_Pitch: -0.1
   Loop: 1
   Mute: 0
@@ -11762,7 +11762,19 @@ MonoBehaviour:
   - guid: ad7d9138-246f-4c30-85d8-7d6c5a7cf3a1
     onExecute:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1979763578}
+          m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - guid: 2493e34b-b3bc-45af-96d6-2221c2522879
     onExecute:
       m_PersistentCalls:
@@ -11778,22 +11790,6 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
-          m_CallState: 2
-  - guid: 30f77dd0-a675-4751-b22e-c0e1e7af0373
-    onExecute:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1979763578}
-          m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
           m_CallState: 2
 --- !u!4 &560232720
 Transform:

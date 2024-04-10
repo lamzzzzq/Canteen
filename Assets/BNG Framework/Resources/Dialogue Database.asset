@@ -5875,7 +5875,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 161.33337
-        y: 314.00003
+        y: 314.66672
         width: 160
         height: 30
     - id: 4
@@ -5909,7 +5909,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: 30f77dd0-a675-4751-b22e-c0e1e7af0373
+        value: 
         type: 0
         typeString: 
       conversationID: 12
@@ -6132,12 +6132,6 @@ MonoBehaviour:
       - originConversationID: 13
         originDialogueID: 2
         destinationConversationID: 13
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      - originConversationID: 13
-        originDialogueID: 2
-        destinationConversationID: 13
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
@@ -6156,55 +6150,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 160
         y: 130
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 4
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 13
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 150.66669
-        y: 203.33331
         width: 160
         height: 30
     - id: 4
@@ -6258,8 +6203,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 149.33337
-        y: 204
+        x: 112.000046
+        y: 250.66666
         width: 160
         height: 30
     - id: 5
@@ -6315,8 +6260,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 416.00003
-        y: 197.33334
+        x: 456.66672
+        y: 208.66666
         width: 160
         height: 30
     - id: 6
