@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 976
   m_ShowMode: 4
-  m_Title: Dialogue
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 78
+  controlID: 77
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 79
+  controlID: 78
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 80
+  controlID: 79
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: DialogueEditorWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -215,15 +215,15 @@ MonoBehaviour:
     y: 0
     width: 930
     height: 660.6667
-  m_MinSize: {x: 722, y: 261}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 2
+  m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
@@ -350,7 +350,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -419,9 +419,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6a1affffa81affffd273fffff4e6ffff1cfbffff1a910000
+      m_SelectedIDs: a8bb0300
+      m_LastClickedID: 244648
+      m_ExpandedIDs: 2cf9feffc8f9feffee52ffff1cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -932,9 +932,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.011152247, y: -0.9702552, z: 0.24182694, w: -0.00043040095}
   m_Size:
-    m_Target: 0.89313316
+    m_Target: 1.5146478
     speed: 2
-    m_Value: 0.89313316
+    m_Value: 1.4494238
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1111,7 +1111,7 @@ MonoBehaviour:
     questEntryNumber: 0
     questEntryTexts:
     - (Main State)
-    questState: 32
+    questState: 1
   - type: 2
     expression: 
     expressionValue: 
@@ -1123,7 +1123,7 @@ MonoBehaviour:
     questEntryNumber: 0
     questEntryTexts:
     - (Main State)
-    questState: 2
+    questState: 1
   - type: 2
     expression: 
     expressionValue: 
@@ -1135,7 +1135,7 @@ MonoBehaviour:
     questEntryNumber: 0
     questEntryTexts:
     - (Main State)
-    questState: 4
+    questState: 1
   - type: 2
     expression: 
     expressionValue: 
@@ -1147,7 +1147,7 @@ MonoBehaviour:
     questEntryNumber: 0
     questEntryTexts:
     - (Main State)
-    questState: 4
+    questState: 1
   - type: 1
     expression: 
     expressionValue: 
@@ -1237,7 +1237,7 @@ MonoBehaviour:
     questEntryNumber: 0
     questEntryTexts:
     - (Main State)
-    questState: 4
+    questState: 1
   - type: 2
     expression: 
     expressionValue: 
@@ -1261,7 +1261,7 @@ MonoBehaviour:
     questEntryNumber: 0
     questEntryTexts:
     - (Main State)
-    questState: 2
+    questState: 1
   - type: 2
     expression: 
     expressionValue: 
@@ -1273,10 +1273,10 @@ MonoBehaviour:
     questEntryNumber: 0
     questEntryTexts:
     - (Main State)
-    questState: 2
+    questState: 1
   autoUpdateWatches: 0
   watchUpdateFrequency: 1
-  nextWatchUpdateTime: 773.832802
+  nextWatchUpdateTime: 209.1313988
   watchableVariableNames:
   - Actor
   - ActorIndex
@@ -1649,7 +1649,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/BNG Framework/Resources
+    - Assets/Audio
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1657,16 +1657,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/BNG Framework/Resources
+  - Assets/Audio
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Unity\Canteen
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 143.66669}
-    m_SelectedIDs: 080a0100
-    m_LastClickedID: 68104
-    m_ExpandedIDs: 00000000f0060100f2060100f4060100f6060100f8060100fa060100fc060100fe06010000070100020701000407010006070100080701000a0701000c0701000e0701001007010012070100140701001607010018070100e809010000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: b2090100
+    m_LastClickedID: 68018
+    m_ExpandedIDs: 00000000f0060100f2060100f4060100f6060100f8060100fa060100fc060100fe06010000070100020701000407010006070100080701000a0701000c0701000e0701001007010012070100140701001607010018070100b409010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000da800000887f0000ce7f0000e085000096e20200000000008afb000086fb0000a8fc0000b0fc0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1746,7 +1746,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 794.6667}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 289
